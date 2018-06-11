@@ -81,10 +81,6 @@ namespace Oui\Player {
             );
         }
 
-        global $event;
-
-        if (txpinterface === 'admin' && ($event === 'prefs' || $event === 'plugin_prefs.oui_player_bandcamp')) {
-            Bandcamp::getInstance();
-        }
+        register_callback('Oui\Player\Bandcamp::getProvider', 'oui_player', 'plug_providers');
     }
 }
