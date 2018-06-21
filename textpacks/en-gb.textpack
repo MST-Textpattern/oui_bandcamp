@@ -1,8 +1,8 @@
 #Default language, en-us, en-gb
 #@admin
 oui_player_provider_bandcamp => Bandcamp
-oui_player_bandcamp => Bandcamp player (oui_player_bandcamp)
-oui_player_bandcamp_prefs => Display the Bandcamp player prefs
+oui_player_bandcamp => Bandcamp player
+oui_player_bandcamp_prefs => Display the Bandcamp player preferences
 oui_player_bandcamp_width => Player width
 oui_player_bandcamp_height => Player height
 oui_player_bandcamp_ratio => Player ratio by default
