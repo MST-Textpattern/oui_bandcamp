@@ -81,6 +81,5 @@ namespace Oui\Player {
             );
         }
 
-        register_callback('Oui\Player\Bandcamp::getProvider', 'oui_player', 'plug_providers');
     }
 }
