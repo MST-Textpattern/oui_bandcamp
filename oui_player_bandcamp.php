@@ -47,10 +47,10 @@ namespace Oui\Player {
             protected static $glue = array('EmbeddedPlayer/', '/', '/');
             protected static $dims = array(
                 'width'     => array(
-                    'default' => '350px',
+                    'default' => '350',
                 ),
                 'height'    => array(
-                    'default' => '350px',
+                    'default' => '350',
                 ),
                 'ratio'     => array(
                     'default' => '',
