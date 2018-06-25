@@ -1,11 +1,11 @@
 <?php
 
 /*
- * This file is part of oui_player_bandcamp,
+ * This file is part of oui_bandcamp,
  * a oui_player v2+ extension to easily embed
  * Bandcamp customizable audio players in Textpattern CMS.
  *
- * https://github.com/NicolasGraph/oui_player_bandcamp
+ * https://github.com/NicolasGraph/oui_bandcamp
  *
  * Copyright (C) 2018 Nicolas Morand
  *
