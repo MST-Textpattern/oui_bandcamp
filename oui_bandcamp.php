@@ -55,7 +55,7 @@ namespace Oui\Player {
                     'default' => '350',
                 ),
                 'height'    => array(
-                    'default' => '350',
+                    'default' => '470',
                 ),
                 'ratio'     => array(
                     'default' => '',

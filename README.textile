@@ -92,7 +92,7 @@ h5. Size
 @Integer@; initially set to @350@.
 The width of the player. =:
 - @height@ :=
-@Integer@; initially set to @350@.
+@Integer@; initially set to @470@.
 The height of the player. =:
 - @ratio@ :=
 integer[@:@]integer; initially not set.
