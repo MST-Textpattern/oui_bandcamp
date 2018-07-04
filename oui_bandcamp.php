@@ -87,13 +87,3 @@ namespace Oui {
         }
     }
 }
-
-namespace {
-    function oui_bandcamp($atts) {
-        return oui_player(array_merge(array('provider' => 'bandcamp'), $atts));
-    }
-
-    function oui_if_bandcamp($atts, $thing) {
-        return oui_if_player(array_merge(array('provider' => 'bandcamp'), $atts), $thing);
-    }
-}
