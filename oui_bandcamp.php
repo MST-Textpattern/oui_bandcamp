@@ -51,15 +51,9 @@ namespace Oui {
             protected static $src = '//bandcamp.com/';
             protected static $glue = array('EmbeddedPlayer/', '/', '/');
             protected static $dims = array(
-                'width'     => array(
-                    'default' => '350',
-                ),
-                'height'    => array(
-                    'default' => '470',
-                ),
-                'ratio'     => array(
-                    'default' => '',
-                ),
+                'width'  => '350',
+                'height' => '470',
+                'ratio'  => '',
             );
             protected static $params = array(
                 'size'      => array(
