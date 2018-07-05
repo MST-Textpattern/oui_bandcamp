@@ -105,6 +105,8 @@ The related preference is a generic oui_player preference; it is applied to all 
 
 h5. Parameters (a→z)
 
+From Txp 4.7, paramaters accepting @true@ and @false@ as valid values can be enable through boolean/valueless attributes.
+
 - @artwork@ :=
 @big@ or @small@; initially set to @big@.
 Defines the artwork size. =:
