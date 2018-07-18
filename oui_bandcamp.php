@@ -35,6 +35,7 @@ namespace Oui {
 
         class Bandcamp extends Provider
         {
+            protected static $mediaType = 'audio';
             protected static $patterns = array(
                 'album' => array(
                     'scheme' => '#((http|https)://bandcamp\.com/(EmbeddedPlayer/)?album=(\d+)/?)#i',
