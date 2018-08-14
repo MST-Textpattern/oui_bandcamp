@@ -29,56 +29,55 @@
  * @package Oui\Player
  */
 
-namespace Oui {
+namespace Oui;
 
-    if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Provider')) {
 
-        class Bandcamp extends Provider
-        {
-            protected static $mediaType = 'audio';
-            protected static $patterns = array(
-                'album' => array(
-                    'scheme' => '#((http|https)://bandcamp\.com/(EmbeddedPlayer/)?album=(\d+)/?)#i',
-                    'id'     => 4,
-                    'prefix' => 'album=',
-                    'glue' => '/',
-                ),
-                'track' => array(
-                    'scheme' => '#((http|https)://bandcamp\.com/(EmbeddedPlayer/)?[\S]+track=(\d+)/?)#i',
-                    'id'     => 4,
-                    'prefix' => 'track=',
-                ),
-            );
-            protected static $src = '//bandcamp.com/';
-            protected static $glue = array('EmbeddedPlayer/', '/', '/');
-            protected static $dims = array(
-                'width'  => '350',
-                'height' => '470',
-                'ratio'  => '',
-            );
-            protected static $params = array(
-                'size'      => array(
-                    'default' => 'large',
-                    'force'   => true,
-                    'valid'   => array('large', 'small'),
-                ),
-                'artwork'   => array(
-                    'default' => '',
-                    'valid'   => array('', 'none', 'big', 'small'),
-                ),
-                'bgcol'     => array(
-                    'default' => '#ffffff',
-                    'valid'   => 'color',
-                ),
-                'linkcol'   => array(
-                    'default' => '#0687f5',
-                    'valid'   => 'color',
-                ),
-                'tracklist' => array(
-                    'default' => 'true',
-                    'valid'   => array('true', 'false'),
-                ),
-            );
-        }
+    class Bandcamp extends Provider
+    {
+        protected static $srcBase = '//bandcamp.com/';
+        protected static $srcGlue = array('EmbeddedPlayer/', '/', '/');
+        protected static $iniDims = array(
+            'width'  => '350',
+            'height' => '470',
+            'ratio'  => '',
+        );
+        protected static $iniParams = array(
+            'size'      => array(
+                'default' => 'large',
+                'force'   => true,
+                'valid'   => array('large', 'small'),
+            ),
+            'artwork'   => array(
+                'default' => '',
+                'valid'   => array('', 'none', 'big', 'small'),
+            ),
+            'bgcol'     => array(
+                'default' => '#ffffff',
+                'valid'   => 'color',
+            ),
+            'linkcol'   => array(
+                'default' => '#0687f5',
+                'valid'   => 'color',
+            ),
+            'tracklist' => array(
+                'default' => 'true',
+                'valid'   => array('true', 'false'),
+            ),
+        );
+        protected static $mediaType = 'audio';
+        protected static $mediaPatterns = array(
+            'album' => array(
+                'scheme' => '#(https?://bandcamp\.com/(EmbeddedPlayer/)?album=(\d+)/?)#i',
+                'id'     => 3,
+                'prefix' => 'album=',
+                'glue' => '/',
+            ),
+            'track' => array(
+                'scheme' => '#(https?://bandcamp\.com/(EmbeddedPlayer/)?[\S]+track=(\d+)/?)#i',
+                'id'     => 3,
+                'prefix' => 'track=',
+            ),
+        );
     }
 }
