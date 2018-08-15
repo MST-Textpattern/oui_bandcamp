@@ -38,9 +38,13 @@ if (class_exists('Oui\Provider')) {
         protected static $srcBase = '//bandcamp.com/';
         protected static $srcGlue = array('EmbeddedPlayer/', '/', '/');
         protected static $iniDims = array(
-            'width'  => '350',
-            'height' => '470',
-            'ratio'  => '',
+            'width'      => '350',
+            'height'     => '470',
+            'ratio'      => '',
+            'responsive' => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
         );
         protected static $iniParams = array(
             'size'      => array(
