@@ -5,6 +5,7 @@ oui_player_bandcamp_prefs => Afficher les préférences du lecteur Bandcamp
 oui_player_bandcamp_width => Largeur du lecteur
 oui_player_bandcamp_height => Hauteur du lecteur
 oui_player_bandcamp_ratio => Ratio utilisé en l'absence de l'une des dimensions
+oui_player_bandcamp_responsive => Rendre les lecteurs adaptatifs à partir des dimensions fournies
 oui_player_bandcamp_artwork => Visuel (optionel)
 oui_player_bandcamp_artwork_none => Aucun
 oui_player_bandcamp_artwork_big => Grand (grand lecteur)

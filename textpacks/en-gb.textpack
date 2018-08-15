@@ -6,6 +6,7 @@ oui_player_bandcamp_prefs => Display the Bandcamp player preferences
 oui_player_bandcamp_width => Player width
 oui_player_bandcamp_height => Player height
 oui_player_bandcamp_ratio => Player ratio by default
+oui_player_bandcamp_responsive => Render responsive players from the provided dimensions
 oui_player_bandcamp_artwork => Artwork (optional)
 oui_player_bandcamp_artwork_none => None
 oui_player_bandcamp_artwork_big => Big (large player only)
