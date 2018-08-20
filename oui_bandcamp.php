@@ -31,9 +31,9 @@
 
 namespace Oui;
 
-if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Player\Provider')) {
 
-    class Bandcamp extends Provider
+    class Bandcamp extends Player\Provider
     {
         protected static $srcBase = '//bandcamp.com/';
         protected static $srcGlue = array('EmbeddedPlayer/', '/', '/');
